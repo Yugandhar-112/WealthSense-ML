@@ -1,0 +1,10 @@
+# Environments
+venv/
+__pycache__/
+
+# Node
+node_modules/
+dist/
+
+# Env variables
+.env
