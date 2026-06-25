@@ -16,13 +16,16 @@ graph TD
     G -->|Axios REST| H[React Dashboard]
 ```
 ## Setup Instructions
+### Important:
+- Create 2 diff terminals for backend and frontend
+- ML_Pipeline is to be run on venv (.\venv\Scripts\Activate.ps1)
 
 | Component | Commands to Run |	Port |
 | :--- | :--- | :--- |
 | **Database** | mongod (Ensure local MongoDB is running) |	27017 |
-| **ML Pipeline** |	cd ml_pipeline && pip install -r requirements.txt && python train_and_process.py |	N/A |
-| **Backend** |	cd backend && npm install && npm start	| 5000 |
-| **Frontend** | cd frontend && npm install && npm run dev |	5173 |
+| **ML Pipeline** |	1. ```cd ml_pipeline ``` <br>2.  ``` .\venv\Scripts\Activate.ps1 ``` <br>3.  ```pip install -r requirements.txt``` <br>4.  ```python train_and_process.py ```|	N/A |
+| **Backend** |	1. ```cd backend``` <br> 2. ```npm install``` <br> 3. ``` npm start```	| 5000 |
+| **Frontend** | 1. ```cd frontend``` <br> 2.```npm install```<br>3. ```npm run dev``` |	5173 |
 
 ## Model Performance & Rationale
 
